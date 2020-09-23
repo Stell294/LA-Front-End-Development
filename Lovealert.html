@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Love Alert</title>
+</head>
+<style>
+
+/*top contains name, photo and the menu bar*/
+.top{
+    display: inline-block;
+    width:100%;
+    padding:7vw;
+}
+.dp{
+    background-color: #fe7f66;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 3vw;
+}
+.dpB{
+    align-content: center;
+    width:13%;
+    padding:7px;
+    float:left;
+    font-size: 12vw;
+}
+.name{
+    text-align: "center";
+    width:23%;
+    padding:7px;
+    float:left;
+}
+.menu {
+  width: 8vw;
+  height: 0.7vw;
+  background-color: black;
+  margin: 6px 0;
+}
+.menuB{
+    width:17%;
+    padding:7px;
+    float:right;
+}
+
+/*center contains picture and text*/
+.middle{
+    width: 100%;
+    padding: 10px;
+    display:inline-table;
+}
+.container1{
+    padding:4vw;
+    text-align: center;
+}
+.container2{
+    padding:2vw;
+    text-align: center;
+}
+.container3{
+    align-self: center;
+    width: 100%;
+    padding:1vw;
+    text-align: center;
+}
+.responsive {
+  max-width: 88%;
+  height: auto;
+  position: middle;
+  padding-bottom: 5%;
+}
+h1{
+    font-family:Arial;
+    font-size: 9vw;
+    color: black;
+    font-weight:bold;
+}
+p{
+    font-weight: 520;
+    font-size: 4.2vw;
+    color: rgb(85, 81, 81);
+}
+
+/*bottom contains get started button*/
+.bottom{
+    width: 100%;
+    padding: 7vw;
+    align-items: center;
+}
+.GSB{
+    position: relative;
+    vertical-align: bottom;
+    align-content: center;
+    left: 18%;
+}
+button{
+    font-weight: bold;
+    color: black;
+    font-size: 5vw;
+    background-color: #fe7f66;
+    width: 55vw;
+    height: 14vw;
+    border-radius: 8vw;
+    border:none;
+}
+
+/*Menu bar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 24px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fe7f66;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+<!--Menu Bar-->
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "70vw";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class=top>
+        <div class="dpB">
+            <div class="dp"><!--I'm guessing this is for the profile image--></div>
+        </div>
+        <div class="name">
+            <p style="font-weight: bolder; font-size: 7vw; align-self: center; color: black;text-indent: 0.8vw;">Gellio<p>
+        </div>
+        <div class=menuB>
+            <span style="font-size:9vw;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="container1">
+            <img src="TDV_M33_05.png" alt="Image" class="responsive">
+        </div>
+        <div class="container2">
+            <h1>Product Manager</h1>
+        </div>
+        <div class="container3">
+            <p>
+                Create a unique illustration for a website, application or presentation.
+            </p>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="GSB">
+            <button allign="center" name="Get Started">GET STARTED</button>
+        </div>
+    </div>
+</body>
+</html>
